@@ -1,12 +1,16 @@
 * {
-  transition: 1s;
+  transition: 0.5s;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+.noClick {
+  pointer-events: none;
+}
+
 .carusel {
-  margin: 200px auto;
+  margin: 300px auto;
   display: flex;
   position: relative;
   width: 400px;
@@ -19,6 +23,7 @@
   top: 50%;
   z-index: 100;
   transform: translateY(-50%);
+  cursor: pointer;
 }
 .carusel img:first-child {
   left: 10px;
