@@ -1,0 +1,55 @@
+* {
+  transition: 1s;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.carusel {
+  margin: 200px auto;
+  display: flex;
+  position: relative;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+}
+.carusel img {
+  width: 50px;
+  position: absolute;
+  top: 50%;
+  z-index: 100;
+  transform: translateY(-50%);
+}
+.carusel img:first-child {
+  left: 10px;
+}
+.carusel img:nth-child(2) {
+  right: 10px;
+}
+.carusel div {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+.carusel div p {
+  font-size: 30px;
+}
+.carusel div:nth-child(3) {
+  right: 0px;
+  background-color: red;
+}
+.carusel div:nth-child(4) {
+  right: -400px;
+  background-color: blue;
+}
+.carusel div:nth-child(5) {
+  right: -800px;
+  background-color: greenyellow;
+}
+.carusel div:nth-child(6) {
+  right: -1200px;
+  background-color: pink;
+}
